@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Emailjs -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Main Style css file -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ====== Start Header ====== -->
+    <header>
+      <nav class="nav-bar container">
+        <div class="logo">
+          <a href="#">Portfolio</a>
+        </div>
+        <div class="menu-container">
+          <div class="toggle-menu">
+            <span></span>
+            <span class="second"></span>
+            <span></span>
+          </div>
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="darkmode">
+            <input type="checkbox" name="dark" id="dark-mode" />
+            <label for="dark-mode" class="dark-toggle">
+              <span><i class="fa-solid fa-sun"></i></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ====== End Header ====== -->
+    <!-- ====== Start Main Page ====== -->
+    <main class="container">
+      <!-- ====== Start Landing ====== -->
+      <section class="landing">
+        <div class="info">
+          <p>hello, i'm</p>
+          <h1 class="name">Mostafa Gamal</h1>
+          <div class="title">frontend developer</div>
+          <div class="btns">
+            <a href="CV/Mostafa Gamal Hamed_CV.pdf" class="cv" download=""
+              >Download CV</a
+            >
+            <a href="#contact" class="contact-info">contact info</a>
+          </div>
+          <div class="links">
+            <a
+              href="https://www.linkedin.com/in/mostafa-gamal-104267248/"
+              class="linked-in"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/mostafagamal77"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="landing-image">
+          <img src="images/profile.png" alt="" />
+        </div>
+      </section>
+      <!-- ====== End Landing ====== -->
+      <section id="about">
+        <div class="heading">
+          <p>get to know more</p>
+          <h2>about me</h2>
+        </div>
+        <div class="about-container">
+          <div class="about-img">
+            <img src="images/about-pic.png" alt="" />
+          </div>
+          <div class="about-content">
+            <div class="row">
+              <div class="experience">
+                <i class="fa-solid fa-award"></i>
+                <span class="title">Experience</span>
+                <span> 1+ year</span>
+                <span> Frontend Development </span>
+              </div>
+              <div class="education">
+                <i class="fa-solid fa-user-group"></i>
+                <span class="title">Education</span>
+                <span> Bachelors Degree </span>
+                <span> Masters Degree </span>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus velit qui cumque consequuntur voluptatum! Aliquam
+              pariatur nulla facere nam at explicabo! Veritatis exercitationem
+              distinctio nesciunt aspernatur perferendis fugit, dolorum sint?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ====== Start Skills ====== -->
+      <section id="skills">
+        <div class="heading">
+          <p>See my Skills</p>
+          <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+          <div class="technical">
+            <h3>Technical Skills</h3>
+            <div class="box">
+              <div class="box-skill">
+                <div class="skill">HTML</div>
+                <div class="progress">
+                  <span class="span" style="width: 0" data-width="90"></span>
+                  <span class="number">0</span>
+                </div>
+              </div>
+              <div class="box-skill">
+                <div class="skill">CSS</div>
+                <div class="progress">
+                  <span class="span" style="width: 0" data-width="85"></span>
+                  <span class="number">0</span>
+                </div>
+              </div>
+              <div class="box-skill">
+                <div class="skill">JavaScript</div>
+                <div class="progress">
+                  <span class="span" style="width: 0" data-width="75"></span>
+                  <span class="number">0</span>
+                </div>
+              </div>
+              <div class="box-skill">
+                <div class="skill">Bootstrap</div>
+                <div class="progress">
+                  <span class="span" style="width: 0" data-width="70"></span>
+                  <span class="number">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="personal">
+            <h3>Personal Skills</h3>
+            <div class="box">
+              <div class="box-skill">
+                <div class="circular-progress">
+                  <span class="progress-value" data-progress="80">0%</span>
+                </div>
+                <div class="skill">Communication</div>
+              </div>
+              <div class="box-skill">
+                <div class="circular-progress">
+                  <span class="progress-value" data-progress="70">0%</span>
+                </div>
+                <div class="skill">Soft</div>
+              </div>
+              <div class="box-skill">
+                <div class="circular-progress">
+                  <span class="progress-value" data-progress="88">0%</span>
+                </div>
+                <div class="skill">Team Work</div>
+              </div>
+              <div class="box-skill">
+                <div class="circular-progress">
+                  <span class="progress-value" data-progress="76">0%</span>
+                </div>
+                <div class="skill">Creativity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====== End Skills ====== -->
+
+      <!-- ====== Start Slider ====== -->
+      <section id="services">
+        <div class="heading">
+          <p>see our services</p>
+          <h2>Services</h2>
+        </div>
+        <div class="slider-container swiper">
+          <div class="slide-content">
+            <div class="slides swiper-wrapper">
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Development</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-laptop-code"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Clean Code</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-chart-pie"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Data Analysis</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>SEO</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-window-maximize"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Responsive Design</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>User Experience</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <div class="service">
+                  <div class="icon-content">
+                    <span class="overlay"></span>
+                    <i class="fa-solid fa-palette"></i>
+                  </div>
+                  <div class="card-content">
+                    <h4>Website Designing</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Molestias libero quia minus dicta
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next slide-btn"></div>
+          <div class="swiper-button-prev slide-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- ====== End Slider ====== -->
+
+      <!-- ====== Start Works ====== -->
+      <section class="works" id="works">
+        <div class="heading">
+          <p>my works</p>
+          <h2>Works</h2>
+        </div>
+        <div class="works-content">
+          <ul class="categories">
+            <li class="active" data-category="all">All</li>
+            <li data-category="dev">Web</li>
+            <li data-category="des">Design</li>
+            <li data-category="mob">mobile</li>
+          </ul>
+          <div class="images-content">
+            <div class="project-card all mob">
+              <img src="images/project-1.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card all des dev">
+              <img src="images/project-2.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card all dev">
+              <img src="images/project-3.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card all mob">
+              <img src="images/project-4.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card all dev">
+              <img src="images/project-5.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card all des">
+              <img src="images/project-6.jpg" alt="" />
+              <div class="image-overlay">
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" target="_blank" class="icon">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====== End Works ====== -->
+      <!-- ====== Start Contact ====== -->
+      <section id="contact">
+        <div class="heading">
+          <p>contact me</p>
+          <h2>contact</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>contact info</h3>
+            <div class="info-container">
+              <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>qalyub, Egypt</span>
+              </div>
+              <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                <span>email@gmail.com</span>
+              </div>
+              <div class="info">
+                <i class="fa-solid fa-phone"></i> <span>123-456-789</span>
+              </div>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+            <div class="form">
+              <h3>contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" id="username" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" id="email" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" id="phone" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" id="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <button onclick="sendEmail();" class="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====== End Contact ====== -->
+    </main>
+    <!-- ====== End Main Page ====== -->
+    <footer>portfolio 2023 made by <span>mostafa gamal</span></footer>
+    <!-- ====== Start Scroll Top ====== -->
+    <button class="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- ====== End Scroll Top ====== -->
+
+    <!-- Swiper Slider JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
